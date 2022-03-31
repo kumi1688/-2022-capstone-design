@@ -1,0 +1,60 @@
+body {
+  background-color: gray;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 70%;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+
+.header {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Yeon Sung", cursive;
+  font-size: 500%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+#card1 {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: yellow;
+}
+
+#card2 {
+  padding: 5px;
+  background-color: skyblue;
+}
+
+#card3 {
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 70%;
+}
+
+p {
+  font-family: "Jua", sans-serif;
+  font-size: 150%;
+}
+
+a {
+  font-family: "Jua", sans-serif;
+  font-size: 200%;
+}
