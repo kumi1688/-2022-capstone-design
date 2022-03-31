@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 90vh;
+  width: 60vw;
+
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.screen {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 300%;
+}
+
+.buttons {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  background-color: black;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 300%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+}
+
+.iconbox {
+  background-color: green;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-size: 300%;
+}
