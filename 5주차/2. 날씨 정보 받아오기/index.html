@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Axios 기본 사용법</title>
+    <!-- 1. Axios 라이브러리 CDN으로 불러오기 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- 2. 외부에 index.js 파일을 만든 뒤, 자바스크립트 코드를 분리하기 -->
+    <script src="./index.js"></script>
+    <!-- 3. 웹 폰트 불러오기 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 4. 외부에 css. 파일 만들기 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-item">
+          <img id="icon" alt="이미지 없음" />
+          <div id="temp"></div>
+          <div id="description"></div>
+        </div>
+        <div class="card-item" id="feels_like">체감온도 <span></span></div>
+        <div class="card-item" id="pressure">기압 <span></span></div>
+        <div class="card-item" id="humidity">습도 <span></span></div>
+        <div class="card-item" id="temp_min">최저기온 <span></span></div>
+        <div class="card-item" id="temp_max">최고기온 <span></span></div>
+        <div class="card-item" id="wind">바람 <span></span></div>
+        <div class="card-item" id="sunrise">일출 <span></span></div>
+        <div class="card-item" id="sunset">일몰 <span></span></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    getWeatherData();
+  </script>
+</html>

@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  height: 90%;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 40%;
+  height: 40%;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.card-item:first-child {
+  grid-column: span 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+div {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #888;
+}
+
+span {
+  color: black;
+}
+
+#temp {
+  color: black;
+  font-size: 200%;
+  font-weight: 600;
+}
+
+#description {
+  color: black;
+  font-size: 200%;
+  font-we
+}
